@@ -1,0 +1,20 @@
+{
+  "name": "cpu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "cpu-prof":"node --cpu-prof index.js",
+    "prof": "node --prof index.js",
+    "processed":" node --prof-process isolate-000001CAAE84A490-52816-v8.log> processed.txt",
+    "flamegraphjson": "node --prof-process --preprocess -j isolate-000001CAAE84A490-52816-v8.log |flamebearer -",
+    "stresstest":"autocannon -c 10 -d 5 -l http://localhost:3001/user"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,1 @@
+autocannon -c 10 -d 5 -l http://localhost:3001/user
